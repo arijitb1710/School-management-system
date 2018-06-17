@@ -1,0 +1,278 @@
+body{
+    background-color:lightgrey;
+    background-size: cover; 
+    margin: 0 ;
+    padding: 0;
+    height: 100%
+}
+
+#side-menu{
+    width: 200px;
+    height:520px;
+    border: 2px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.side-nav-menu{
+    margin-left: 3px;
+    margin-top: 3px;
+    width: 96%;
+    height: 32%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #052631;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sidenav-anchor{
+    font-size: 20px;
+    font-family: arial;
+    color: tan;
+}
+
+.sidenav-anchor:hover{
+    font-size: 30px;
+    font-family: arial;
+    color:orange;
+}
+
+.add-products-brand-popup{
+    margin-left: 80px;
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+    background-color: black;
+    opacity: 0.8;
+    color:white;
+    border-bottom: 1px solid white;
+}
+
+#timetable{
+    width: 90%; height: 500px; border: 4px solid white; margin-left: 60px; 
+    margin-top: 115px;
+    border-spacing: 0;
+    border-radius: 2px;
+    
+}
+#timetable tbody tr{
+  
+    
+}
+
+#timetable th, td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 16px;
+    font-family: verdana;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+#timetable th{
+    font-size: 20px;
+    background-color: white
+}
+
+#table-brand tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+#add-brand-popup-submit{
+    cursor: pointer;
+}
+
+#topnav{
+    width:100%;
+    height: 100px;
+    background-color: black;
+
+}
+
+#topnav span {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+    animation-name: heading;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes heading {
+    0%   {margin-left: 100px;}
+    100% {margin-left: 750px;}
+}
+
+#topnav a {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    font-size: 20px;
+    margin-top: 65px;
+    margin-left: 1100px;
+}
+
+.class-list{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: black;
+    border: none;
+    width: 300px;
+    margin-left: 150px;
+    border: 2px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white
+}
+
+#top-content button{
+    margin-left:100px;
+    padding: 20px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#update-popup{
+    position: absolute;
+    margin-left: 530px;
+    margin-top: 100px;
+    width: 200px;
+    height: 350px;
+    background-color: black;
+    top: 320px;
+}
+
+.blur-background{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(10px);
+}
+
+.header-links{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+#top-nav-list {
+    margin: 0px;
+    margin-top: 2px;
+    padding: 0px;
+}
+
+.top-nav-ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#top-nav-list li{
+   
+    list-style: none;
+    width: 16.6%;
+    height: 55px;
+    background-color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0px;
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+
+}
+
+#top-nav-list li ul li {
+    display: none;
+}
+
+#top-nav-list li:hover ul li{
+    display: block;
+
+}
+
+#top-nav-list li ul li:hover ul li{
+   display: block;
+
+}
+
+.sub-content{
+    width:19.8%;
+    height: 100%;
+    float: left;
+    border: 1px solid orange;
+    background-color: #002641; 
+}
+
+#main-content{
+    width:100%;
+    height: 120px;
+    /*background-color: #052631;*/
+    /*border-right: 1px solid white;*/
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 10px;
+
+}
+
+.stat{
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+    float: left;
+    
+}
+
+.img-admin{
+    width: 30px;
+    height: 50px;
+    position: relative;
+
+}
+
+.stat div{
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    height: 45%;
+    /* border: 1px solid white; */
+}
+
+.stat img{
+    width: 100%;
+    height: 100%;
+}
+
+.stat-count{
+    font-family: Verdana; color: white; font-weight: bold;font-size:20px; margin-left: 15px
+}
+
+.add-users{
+    width:100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.form-users-button{
+    margin-top: 15px;
+    width: 70px;
+    padding: 3px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}

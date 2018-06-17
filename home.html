@@ -1,0 +1,139 @@
+<html>
+<title>Home Page</title>
+<head>
+ <link rel="stylesheet" href="home-style-org.css">    
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+ <script src="home-session-check.js"></script>
+ <script src="script.js"></script>
+ </head>
+<body>
+<div id="fict-body">
+<h1>Welcome to Home Page</h1> 
+<ul id="Account" style="margin-left: 1100px; margin-top:20px;position: absolute;top: 20px;">
+    <li>Account
+        <ul>
+            <li><a id="profile">Profile</a></li>
+            <li><a id="logout">Logout</a></li>
+        </ul>
+    </li>
+</ul>
+<!-- <div id="account" > -->
+    <!--<select name="dropdown" class="account" style="width:120px;height:30px;margin-left: 1100px; margin-top:20px;position: absolute;top: 20px;border:1px solid white;border-radius: 10px">
+        <option value="account" selected>Account</option>
+        <option value="profile">Profile</option>
+        <option value="logout">Logout</option>
+    </select>-->
+<!--</div>-->
+<div style="position: absolute;margin-left: 260px;margin-top:550px;width: 900px; height: 300px;">
+    <div class="charts">
+            <canvas id="finance" width="420" height="280"></canvas>
+    </div>
+    <div class="charts">
+        <canvas id="results-chart" width="420" height="280"></canvas>
+    </div>
+</div>
+<div id="main-content" style="background-color: black;border-radius: 10px"> 
+    <div id="admin" class="sub-content">
+        <img src="./images/admin.png" style="width: 100px;height: 110px">
+        <span style="color: white; font-family: Verdana;font-weight: bold;font-size: 20px">Admin</span>
+    </div>   
+    <div class="sub-content">
+            <img src="./images/student.png" style="width: 110px;height: 110px">
+            <span style="color: white; font-family: Verdana;font-weight: bold;font-size: 18px">Student</span>
+    </div>  
+    <div class="sub-content">
+            <img src="./images/teacher.png" style="width: 110px;height: 110px"> 
+            <span style="color: white; font-family: Verdana;font-weight: bold;font-size: 18px">Teacher</span>
+    </div> 
+    <div class="sub-content">
+            <img src="./images/money.png" style="width: 110px;height: 110px"> 
+            <span style="color: white; font-family: Verdana;font-weight: bold;font-size: 18px">Finance</span>
+    </div> 
+</div>
+<div id="chart" style="margin-left: 260px;margin-top:50px;width: 900px; height: 300px;">
+    <div class="charts">
+            <canvas id="stu-attendance-chart" width="420" height="280"></canvas>
+    </div>   
+    <div class="charts">
+            <canvas id="teacher-attendance" width="420" height="280"></canvas>
+    </div>    
+</div>
+
+<div id="sidenav">
+    <div class="subnav">
+        <table style="height: 100% ; width: 100%">
+            <tr><td style="text-align: center ; vertical-align: middle"><a class="subnav-anchor">Dashboard</a></td></tr>
+        </table>
+     </div>
+    <div class="subnav">
+            <table style="height: 100% ; width: 100%">
+                <tr><td style="text-align: center ; vertical-align: middle">
+                        <select class="nav-select">
+                                <option value="1" selected >Select template</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+        </select>
+                </td></tr>
+        </table>
+    </div>
+    <div id="Menu-div" class="subnav">
+        <table style="height: 100% ; width: 100%">
+            <tr><td style="text-align: center ; vertical-align: middle">
+                    <p id="Menu-button" class=" content-class subnav-anchor">Menu</p>
+                    <ul id="Menu">
+                        <li>Menu1</li>
+                        <li>Menu2</li>
+                        <li>Menu3</li>
+                    </ul>
+            </td></tr>
+        </table>
+    </div>
+    <div class="subnav">
+        <table style="height: 100% ; width: 100%">
+            <tr><td style="text-align: center ; vertical-align: middle">
+                <a href="syllabus.html"class="subnav-anchor" id="syllabus" style="text-decoration: none">Syllabus</a>
+                </td></tr>
+        </table>
+    </div>
+    <div class="subnav">
+        <table style="height: 100% ; width: 100%">
+            <tr><td style="text-align: center ; vertical-align: middle">
+                <a class="subnav-anchor" id="add-stock" href="notice.html" style="text-decoration: none">Notice Board</a>
+                </td></tr>
+        </table>
+    </div>
+    <div class="subnav">
+        <table style="height: 100% ; width: 100%">
+            <tr><td style="text-align: center ; vertical-align: middle">
+                <a style="text-decoration: none"href="routine.html"class="subnav-anchor" id="add-stock">Daily Routine</a>
+                </td></tr>
+        </table>
+    </div>
+    <div class="subnav">
+        <table style="height: 100% ; width: 100%">
+            <tr><td style="text-align: center ; vertical-align: middle">
+                <a style="text-decoration: none"href="class_results.html"class="subnav-anchor" id="add-stock">Class Results</a>
+                </td></tr>
+        </table>
+    </div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+    <div class="subnav"></div>
+</div>
+</div>
+<div id= "admin-cred" style="position: absolute;width:250px;height:200px;background-color: lightblue;margin-left: 550px;margin-top: 0px;cursor:pointer;border-radius: 10px" hidden >
+    <input id="admin-username" style="margin-left:60px;margin-top: 10px;height: 50px; background-color: lightblue;border: none; border-bottom: 1px solid black" type="text" placeholder="Admin Username">
+    <input id="admin-password" style="margin-left:60px;margin-top: 10px;height: 50px; background-color: lightblue;border: none; border-bottom: 1px solid black" type="password" placeholder="Admin Password">
+    <button style="padding: 10px;width: 70px;margin-left:50px;margin-top: 20px;background-color: black; color:white;border: none;cursor: pointer">Submit</button>
+    <button id="close_admin_cred" style="padding: 10px;width: 70px;margin-left:10px;margin-top: 20px;background-color: black; color:white;border: none;cursor: pointer">Close</button>
+</div>
+</div>
+</body>    
+</html>

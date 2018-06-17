@@ -1,0 +1,252 @@
+#top-nav-list {
+    margin: 0px;
+    margin-top: 2px;
+    padding: 0px;
+}
+
+.top-nav-ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#top-nav-list li{
+   
+    list-style: none;
+    width: 16.6%;
+    height: 55px;
+    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0px;
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+
+}
+
+#top-nav-list li ul li {
+    display: none;
+}
+
+#top-nav-list li:hover ul li{
+    display: block;
+
+}
+
+#top-nav-list li ul li:hover ul li{
+   display: block;
+
+}
+
+.header-links{
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.main-content{
+    width: 100%;
+    height: 800px;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: lightgray; */
+    border-radius:  10px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: black
+}
+
+#add-syllabus{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.syllabus{
+    width: 23%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #ecdee5;
+    box-shadow:5px 5px 50px grey; 
+ }
+
+ .button-syllabus{
+    width: 13%;
+    height: 100%; 
+    margin-left: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    box-shadow:5px 5px 50px grey; 
+ }
+
+ .button-syllabus:hover{
+    background-color: white;
+    color:black
+ }
+
+ .syllabus::-moz-placeholder{
+    font-family: 'myFont', Verdana;
+    font-size: 14px;
+ }
+ textarea::-moz-placeholder{
+    font-family: 'myFont', Verdana;
+ }
+
+ #new-syllabus{
+     width: 30%;
+     height: 70%;
+     margin: auto;
+     margin-top:30px;
+     /* border: 1px solid black; */
+ }
+ .new-syl{
+    width: 100%;
+    height: 20%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #ecdee5;
+    box-shadow:5px 5px 50px grey; 
+    margin-top: 10px;
+ }
+
+ .div-syl{
+     border-radius: 5px;
+     background-color: #ecdee5;
+     border: 2px solid black;
+     box-shadow:5px 5px 50px grey; 
+ }
+
+ .div-syl p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold
+ }
+
+ .content-class:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-right: 15px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+#r_subject{
+    cursor: pointer;
+}
+
+#main-marks{
+    width: 100%;
+    height: 100%;
+}
+
+#search-marks{
+    width: 98%;
+    height: 70px;
+    margin: auto;
+    background-color: #e7f0f4;
+    border-radius: 20px;
+}
+#myadd-results{
+    width: 60%;
+    height: 70px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #e7f0f4;
+    border-radius: 20px;
+}
+
+#myview-results{
+    width: 100%;
+    height: 560px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.view-res{
+    height: 99%;
+    width: 32%;
+    background-color: #e7f0f4;
+    border-radius: 10px;
+    float: left;
+    margin-left: 12px;
+}
+
+.search-res{
+    height: 70%;
+    width: 15%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left:14px;
+    box-shadow: none;
+}
+
+.search-res-child{
+    width: 23%;
+    margin-left: 5px;
+}
+
+.subject-marks{
+    width: 49%;
+    height: 35px;
+    margin-left: 2px;
+    margin-top: 2px;
+    background-color: lightblue;
+    float: left;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#res2,#res3,#res1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+.headers{
+    width: 99%;
+    height: 20px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold
+}
+.headers p{
+    margin:0;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.headers a{
+    margin-left: 10px
+}
+
+.add-update:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+

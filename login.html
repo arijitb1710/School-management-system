@@ -1,0 +1,40 @@
+<html>
+<title>Login Page</title>
+<head>
+    <h1 style="color:white ; opacity: 0.5">Welcome to Login page</h1>
+    <link rel="stylesheet" href="home-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<p id="Usernameerr" hidden class="errmsg">Please enter the username</p>
+<p id="Passworderr" hidden class="errmsg">Please enter the Password</p>
+<p id="Loginerr" hidden class="errmsg">Login Failed !!!</p>
+<div id="login-success-popup" hidden>
+    <table style="height: 100% ; width: 100%">
+        <tr><td style="text-align: center ; vertical-align: middle"><p style="font-weight: bold; font-family: arial">Login Success !</p></td></tr>
+    </table>
+      
+</div>
+<body>
+    <div class="container">
+         <div id="left"></div> 
+         <div id ="right"> 
+             <div class="form-elem">
+                 <form>
+                     <input type="text" id="Username" class="input-elem" placeholder="UserName"></input>
+                      <input type="password" id="Password" class="input-elem" placeholder="Password"></input>
+                     <br></br>
+                     <button type="button" id="Login" class="button-elem">Login</button>
+                     <button type="button" id="Register" class="button-elem" onclick =window.location.href="registration.html">Register</button>
+                 </form>
+             </div>
+         </div> 
+    </div>    
+</body>
+
+
+
+
+
+
+</html>

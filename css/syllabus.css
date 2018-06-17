@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #002641
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: black
+}
+
+.nav img{
+    height: 100%;
+    width:100px;
+}
+
+.nav p{
+    margin: 0;
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    position: absolute;
+    top: 20px;
+    animation-name: slider;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#search-content{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid #456b86;
+    border-radius: 10px;
+    background-color: #174668;
+}
+
+.textbox{
+    height: 70%;
+    width: 30%;
+    /* border: 2px solid white; */
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #5c7d95;
+    margin-left: 15px
+}
+
+#search-content button{
+    height: 80%;
+    width: 25%;
+    margin-top: 5px;
+    margin-left: 10px;
+    border:none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;    
+}
+
+#main-content{
+    width: 90%;
+    margin: auto;
+    height: 700px;
+    /* background-color: #174668; */
+    /* border: 2px solid #174668; */
+}
+#main-content table{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid white; */
+}
+
+.subject{
+    width: 100%;
+    height: 100px;
+    /* background-color: lightgreen; */
+    background-color: #002641;
+    border: 5px solid #174668;
+    border-radius: 10px;
+    border-bottom: 2px solid #174668;
+    cursor: pointer;    
+}
+
+.syllabus{
+    width: 100%;
+    height: 100px;
+    /* background-color: lightgray; */
+    background-color: #002641;
+    border: 5px solid #174668;
+    border-radius: 10px;
+    border-top: 2px solid #174668;
+
+}
+.subject p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center
+}
+ 
+.syllabus p{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color:white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.content-class:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 15px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+@keyframes slider{
+    0% {margin-left:100px}
+    100%{margin-left:600px}
+}

@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#login{
+    
+    border-style: solid;
+    border-width: 1px; 
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-right: 450px;
+    margin-left: 450px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+form > div {
+    margin: auto
+}
+
+.text-warning{
+    text-align: center
+}
+
+#reg{
+    height: 450px;
+    width: 450px;
+    top: 50%;
+    text-align: center;
+    
+   
+
+}
+
+#user-reg{
+    text-align: center;
+   font-size: 40px;
+   font-weight: bold;
+    }
+
+ #reg > div{
+    margin:0 auto;
+    
+ }   
+
+ .reg-input-text{
+    width: 300px;
+    padding: 12px;
+    border: none;
+    background: black;
+    border-bottom: 1px solid white;
+    color: white;
+ }
+
+ .reg-input-text::-moz-placeholder{
+    font-family: 'myFont', Verdana;
+ }
+ 
+
+ #regsubmit{
+     line-height: 20px;
+     background-color: green;
+     color: white;
+     width: 300px;
+     padding: 15px;
+     border: none;
+     border: 1px solid white;
+     cursor: pointer;
+ }
+ 

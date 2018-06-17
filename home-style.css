@@ -1,0 +1,76 @@
+body {
+    height: 100%;
+    background-image: url("./images/bg.png");
+    background-size: cover;
+   
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 40px;
+}
+
+.container {
+    border-radius: 20px;
+    width: 400px;
+    height: 350px;
+    background:black;
+    margin: auto;
+    box-shadow: 10px 15px 40px rgba(0,0,0,0.5)
+}
+
+#left{
+    border-radius: 20px;
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url("./images/logo1.jpg");
+    box-sizing: border-box;
+    background-size: contain
+}
+
+.input-elem {
+   padding: 10px 10px;
+   margin-bottom: 10px;
+   margin-top: 30px;
+   margin-left: 18px;
+    background-color: orange;
+    border-radius: 10px;
+    
+}
+
+.button-elem{
+    padding: 10px 10px;
+    margin-top: 30px;
+    margin-left: 45px;
+    width: 100px;
+    background-color: #79c879;
+    border-radius: 10px;
+}
+
+.errmsg{
+    font-size:13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:red;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: bold;
+}
+
+#login-success-popup{
+    /*background-image: url('./images/Login_success_popup.png');*/
+    background-color: lightgrey;
+    position: absolute;
+    height: 100%;
+    background-size: cover;
+    width: 250px;
+    height: 170px;
+    opacity: 1.0;
+    border-radius: 20px;
+    margin-top: 65px;
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+

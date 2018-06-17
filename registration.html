@@ -1,0 +1,48 @@
+<html>
+
+<title>User Registration Page</title>
+<head>
+<link rel="stylesheet" href="style.css">   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="registration.js"></script>
+</head>
+<body style="background-color: black">
+<p id="user-reg" style="color: orange; font-family: Verdana">User registration</p>
+<a id="navigate-login" style="position: absolute; margin-left: 560px; margin-top: 540px;color: white;text-decoration: none;font-family: Verdana; cursor: pointer"  >Navigate to Login</a>
+<p id="reg-succcess-msg" style="color: greenyellow;font-family: Verdana; text-align:center; font-weight: bold" >Registration Sucessful!</p>
+<p id="reg-error-msg" style="color: red;font-family: Verdana; text-align:center; font-weight: bold" hidden>Registration Error!</p>
+<p id="nameerr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Name !</p>
+<p id="addresserr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Address !</p>
+<p id="emailerr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Email !</p>
+<p id="useriderr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Userid !</p>
+<p id="passworderr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Password !</p>
+<p id="formerr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please check form contents</p>
+<p id="invalidemailerr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter valid email !</p>
+<p id="teleerr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Telephone number !</p>
+<p id="emergencyerr" style="color: red;font-family: Verdana; text-align:center; font-weight: bold ;font-size: 13px" hidden>Please enter Emergency contact number !</p>
+<div>
+<form>
+    <div id="reg" class="alert alert-dismissible alert-secondary">
+     <div>  
+    <input type="text" class="reg-input-text" id="name" placeholder="Name"></input>
+     <br></br>
+    <input type="text" class="reg-input-text" id="address" placeholder="Address"></input>
+    <br></br>
+    <input type="text" class="reg-input-text" id="telephone" placeholder="Telephone No."></input>
+    <br></br>
+    <input type="text" class="reg-input-text" id="emergency" placeholder="Emergency Contact"></input>
+    <br></br>
+    <input type="email" class="reg-input-text" id="email" placeholder="Email example: JohnDoe@us.com"></input>
+    <br></br>
+    <input type="text" class="reg-input-text" id="userid" placeholder="Userid"></input>
+    <br></br>
+    <input type="password" class="reg-input-text" id="password" placeholder="Password"></input>
+    <br></br>
+    </div> 
+    <button id="regsubmit">Submit</button>
+    <br></br>
+    </div>
+</form>  
+</div>
+</body>
+</html>

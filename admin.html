@@ -1,0 +1,168 @@
+<html>
+    <title>Admin</title>
+        <head>
+            <link rel="stylesheet" href="class-level.css">    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+            <script src="customajax.js"></script>
+            <script src="admin.js"></script>   
+            </head>
+        <body style="background-color: white">
+        <div style="width:100%;height: 100px;background:black">
+            
+            <a class="header-links" style="margin-left: 1140px">Home</a>
+            <a class="header-links"style="margin-left: 1200px">Logout</a>
+        </div>
+        <div style="width:100%;height: 58px;background:orange">
+            <ul id="top-nav-list">
+                <li id="users"style="width: 200px">ADD/REMOVE USERS
+                        <!-- <ul class="top-nav-ul">
+                            <li id="add-users"style="margin-top:6px;width: 200px"><a>ADD</a></li>
+                            <li id="remove-users"style="width: 200px"><a>REMOVE</a></li>
+                            <li id="remove-users"style="width: 200px"><a>UPDATE</a></li>
+                        </ul> -->
+                </li>
+                <li id="finance">FINANCE</li>
+                <li id="results">RESULTS
+                        <ul class="top-nav-ul">
+                                <li style="margin-top:6px;width: 210px"><a>2018</a></li>
+                                <li style="width: 210px"><a>2017</a></li>
+                                <li style="width: 210px"><a>2016</a></li>
+                                <li style="width: 210px"><a>2015</a></li>
+                                <li style="width: 210px"><a>2014</a></li>
+                            </ul>
+                </li>
+                <li id="notice">NOTICE UPLOAD</li>
+                <li id="syllabus" style="width:200px;">APPROVE SYLLABUS</li>
+                <li id="leave">APPROVE LEAVE</li>
+            </ul>
+        </div>
+        <div id="main-content"> 
+            <div class="sub-content">
+                <div class="stat">
+                    <img src="./images/admin-teacher.png">       
+                </div>  
+                <div class="stat">
+                        <div>
+                                <p class="stat-count" style="font-size: 30px; margin-top:0px;margin-left:40px">50</p>
+                        </div>
+                        <div>
+                            <p class="stat-count">Teachers</p>
+                        </div>
+                </div>  
+                </div> 
+                  
+            <div class="sub-content">
+                <div class="stat">
+                        <img src="./images/admin-admins.png" style="width: 90%; height:100%"> 
+                </div>    
+                <div class="stat">
+              
+                                <div>
+                                        <p class="stat-count" style="font-size: 30px; margin-top:0px;margin-left:40px">50</p>
+                                </div>
+                                <div>
+                                    <p class="stat-count">Admins</p>
+                                </div>
+                </div> 
+            </div>  
+            <div class="sub-content">
+                <div class="stat">
+                        <img src="./images/profits.png" style="width: 90%; height:100%"> 
+                </div>   
+                <div class="stat">
+                        <div>
+                                <p class="stat-count" style="font-size: 30px; margin-top:0px;margin-left:40px">50</p>   
+                        </div>
+                        <div>
+                                <p class="stat-count">Profits</p>
+                        </div>
+                </div>     
+            </div> 
+            <div class="sub-content">
+                <div class="stat">
+                        <img src="./images/notepad.png" style="width: 90%; height:100%"> 
+                </div>   
+                <div class="stat">
+                        <div>
+                                <p class="stat-count" style="font-size: 30px; margin-top:0px;margin-left:40px">50</p>   
+                        </div>
+                        <div>
+                                <p class="stat-count">Leaves</p>
+                        </div>
+                </div>      
+            </div> 
+            <div class="sub-content">
+                <div class="stat">
+                        <img src="./images/layers.png" style="width: 90%; height:100%">
+                </div>  
+                <div class="stat">
+                        <div>
+                                <p class="stat-count" style="font-size: 30px; margin-top:0px;margin-left:40px">50</p>  
+                        </div>
+                        <div>
+                                <p class="stat-count">Misc.</p>
+                        </div>
+                </div>       
+            </div> 
+        </div>
+        <!-- Div for Add remove and update users -->
+        <div id="div1" >
+
+         <!-- Div for add remove and save button    -->
+        <div id="users-button" style="width: 100% ; height: 50px;margin-top:10px; background-color: black;" >
+            <div style="width:300px;margin-left: 960px">
+                <button class="form-users-button">ADD</button>
+                <button class="form-users-button">REMOVE</button>
+                <button class="form-users-button">UPDATE</button>
+                <button class="form-users-button">SAVE</button>
+            </div>
+        </div>
+
+         <!-- Div for add users -->
+        <div id="add" class="form-users" style="width:400px; height: 400px;margin-left: 430px; margin-top: 40px;" hidden>
+            <input class="add-users" type="text" placeholder="Name">
+            <input class="add-users" type="text" placeholder="Address">
+            <input class="add-users" type="text" placeholder="Telehone">
+            <input class="add-users" type="text" placeholder="Emergency contact">
+            <select class="add-users" placeholder="Role">   
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+             </select>   
+            <input class="add-users" type="email" placeholder="email">  
+            <input class="add-users" type="text" placeholder="Userid">
+            <input class="add-users" type="password" placeholder="Password">
+            <br></br>
+        </div>
+
+         <!-- Div and table for update and  remove users   -->
+        <div id="remove-update" class="form-users" style="width:400px; height: 400px;margin-left: 430px; margin-top: 40px;" hidden >
+            <div>
+            <input  id="name" class="add-users" type="text" placeholder="Name">
+            <input  id="id" class="add-users" type="text" placeholder="Userid">
+            <button id="search" class="form-users-button">Search</button>
+            </div>
+            <table style="width:100%;height: 100%" id="display-users" hidden>
+                <!-- <tr><td class="add-users">Name</td></tr>
+                <tr><td class="add-users">Adr</td></tr>
+                <tr><td class="add-users">ele</td></tr>
+                <tr><td class="add-users">BBB</td></tr>
+                <tr><td class="add-users">VCBH</td></tr>
+                <tr><td class="add-users">BNHG</td></tr>
+                <tr><td class="add-users">NGH</td></tr>
+                <tr><td class="add-users">NGH</td></tr> -->
+            </table>
+        </div>
+
+        
+         </div> <!-- div for add , remove an dupdate users end here -->
+
+        <!-- Second div for notice upload -->
+        <div id="div2" style="width:400px; height: 400px;margin-left: 430px; margin-top: 40px;border: 1px solid black" class="notice" hidden>
+            <input class="add-users"type="file" name="file" id="file">
+            <input class="add-users" type="submit" value="Upload Image" id="submit">
+            <p style="font-family: Verdana;font-size: 14px" hidden>The following image has been uploaded successfully.</p>
+            <div id="file-show" style="width:100%; height: 60%; margin-top: 10px; border: 1px solid black"></div>
+        </div>
+
+        </body>
+</html>

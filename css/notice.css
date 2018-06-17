@@ -1,0 +1,65 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #002641
+}
+
+.main-container{
+    width: 99%;
+    height: 500px;
+   margin-top: 10px;
+   margin-left: 4px;
+   /* border: 2px solid black; */
+}
+
+.image-container{
+
+    width: 98%;
+    height: 98%;
+      margin: auto;
+    margin-top: 20px;
+}
+
+.navigation-container{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 320px;
+}
+
+.navigation-container div{
+    width: 50px;
+    height: 100%;
+    float: left;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.active{
+    display: inline-block
+}
+
+.inactive{
+    display: none;
+}
+
+.top-container p{
+    color: #9099a8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 35px ;
+    font-style: italic;
+    animation-name: slider;
+    animation-duration: 6s;
+    animation-iteration-count: infinite
+}
+
+@keyframes slider{
+         0%   {margin-left: 100px;}
+        100% {margin-left: 900px;}
+}
+

@@ -1,0 +1,49 @@
+<html>
+    <title>Class Results</title>
+    <head>
+     <link rel="stylesheet" href="class-level.css">    
+     <link rel="stylesheet" href="css/class-results.css">  
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+     <script src="js/class_results.js"></script>
+     </head>
+    <body>
+    <div id="topnav">
+        <img style="width:100px;height:100%" src="./images/small-calendar.png">
+        <span>Class Results at a glance</span>
+        <a href="home.html">Home</a>
+    </div>
+    <div style="margin-top: 10px;width:100%; height:100px ; background-color: whitesmoke"id="top-content">
+            <input id="class" list="classes" class="result-list" placeholder="Choose a class">
+            <datalist style="color: white" id="classes">
+              <option value="I">
+              <option value="II"> 
+              <option value="III">
+              <option value="IV">
+              <option value="V">
+            </datalist>
+            <input id="section" list="sections" class="result-list" placeholder="Choose a section">
+            <datalist id="sections">
+              <option value="A">
+              <option value="B">
+            </datalist>
+            <input id="roll_no" class="result-list" placeholder="Roll No">
+            <input id="term" list="terms" class="result-list" placeholder="Term">
+            <datalist id="terms">
+                <option value="I">
+                <option value="II">
+                <option value="III">
+              </datalist>
+            <button id="search">Search</button>
+        </div>
+    <div style="width: 100%; height:800px;margin-top: 10px" >
+    <div id="result-display" hidden>
+            <div class='headers'><p style="margin-left: 10px"></p></div>
+            <div id="res1-marks">
+                
+            </div>
+            <div class='footers'></div>
+    </div>    
+    </div>
+           
+    </body>
+</html>

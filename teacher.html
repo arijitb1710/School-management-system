@@ -1,0 +1,140 @@
+<html>
+        <title>Teacher</title>
+            <head>
+                <link rel="stylesheet" href="css/teacher.css"> 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+                <script src="js/teacher.js"></script>
+                </head>
+            <body style="background-color: white;margin: 0;padding: 0">
+            <div style="width:100%;height: 70px;background:black">
+                
+                <a class="header-links" href="home.html"style="margin-left: 1140px;">Home</a>
+                <a class="header-links" href="login.html"style="margin-left: 1200px;">Logout</a>
+            </div>
+            <div style="width:100%;height: 58px;background:green">
+                <ul id="top-nav-list">
+                    <li id="syllabus" style="width: 200px">SYLLABUS
+                            <!-- <ul class="top-nav-ul">
+                                <li id="add-users"style="margin-top:6px;width: 200px"><a>ADD</a></li>
+                                <li id="remove-users"style="width: 200px"><a>UPDATE</a></li>
+                             </ul> -->
+                    </li>
+                    <li id="lesson_plan">LESSON PLAN</li>
+                    <li id="results">RESULTS</li>
+                    <li id="notice">APPLY LEAVES</li>
+                    <li id="syllabus" style="width:200px;">APPROVE SYLLABUS</li>
+                    <li id="leave" style="border-right: none">APPROVE LEAVE</li>
+                </ul>
+            </div>  
+            <div class="main-content">
+                <div id="add-syllabus" hidden>
+                    <input id="class" type="text" list="classes"class="syllabus" style="margin-left:8px" placeholder="Class">
+                    <datalist id="classes">
+                        <option value="I">
+                        <option value="II"> 
+                        <option value="III">
+                        <option value="IV">
+                        <option value="V">
+                      </datalist>
+                    <input id="section" type="text" list="sections" class="syllabus" style="margin-left:8px" placeholder="Section">
+                    <datalist id="sections">
+                            <option value="A">
+                            <option value="B">
+                    </datalist>
+                    <input id="subject" type="text" list="subjects" class="syllabus" style="margin-left:8px" placeholder="Subject">
+                    <datalist id="subjects">
+                            <option value="English">
+                            <option value="Bengali">
+                            <option value="Science">
+                            <option value="Physics">
+                            <option value="Chemistry">
+                            <option value="Biology">    
+                          </datalist>
+                    <button id="search" class="button-syllabus">Search</button>
+                    <button id="add" class="button-syllabus" hidden>Add new Syllabus</button>
+                </div>
+                <div id="existing-syllabus" style="width:50%;height: 50%;margin: auto;margin-top:50px;" hidden>
+                    <div style="width: 100%;height: 50px;text-align: center" id="r_subject" class="div-syl"></div>
+                    <div style="width: 100%;height: 100px;" id="r_syllabus" class="div-syl" hidden></div>
+                </div>
+                <div id="new-syllabus" hidden>
+                 <input type="text" list="classes" class="new-syl" placeholder="Add Class"> 
+                 <datalist id="classes">
+                        <option value="I">
+                        <option value="II"> 
+                        <option value="III">
+                        <option value="IV">
+                        <option value="V">
+                </datalist>
+                 <input id="new-syl-section" type="text" list="sections" class="new-syl" placeholder="Add Section"> 
+                 <datalist id="sections">
+                        <option value="A">
+                        <option value="B">
+                </datalist>
+                 <input id="new-syl-subject" type="text" list="subjects" class="new-syl" placeholder="Add Subject"> 
+                 <datalist id="subjects">
+                        <option value="English">
+                        <option value="Bengali">
+                        <option value="Science">
+                        <option value="Physics">
+                        <option value="Chemistry">
+                        <option value="Biology">    
+                      </datalist>
+                 <textarea id="" style="height:30%"class="new-syl" maxlength="5000">Enter Syllabus here</textarea>  
+                 <button style="width: 100% ; height: 50px; background-color: black;color:white;border-radius: 5px;cursor:pointer">Submit</button>
+                </div>
+                <!-- Results Div main -->
+                <div id="main-marks">
+                    <!-- search bar for sarching results -->
+                    <div id="search-marks">
+                            <input type="text" class="search-res syllabus"  placeholder="Name">
+                            <input type="text" list="classes"class="search-res syllabus" placeholder="Class">
+                            <datalist id="classes">
+                                <option value="I">
+                                <option value="II"> 
+                                <option value="III">
+                                <option value="IV">
+                                <option value="V">
+                              </datalist>
+                            <input type="text" list="sections" class="search-res syllabus"placeholder="Section">
+                            <datalist id="sections">
+                                    <option value="A">
+                                    <option value="B">
+                            </datalist>
+                            <!-- <input type="text" list="terms" class="search-res syllabus"placeholder="Term">
+                            <datalist id="terms">
+                                    <option value="I">
+                                    <option value="II">
+                                    <option value="III">
+                                  </datalist> -->
+                            <input type="text" class="search-res syllabus" placeholder="Roll No">
+                            <button class="search-res button-syllabus">View Result</button>
+
+
+                    </div>
+                    <div id="myadd-results" hidden>
+                            <input type="text" class="search-res-child search-res syllabus"  placeholder="Term">
+                            <input type="text" class="search-res-child search-res syllabus"  placeholder="Subject">
+                            <input type="text" class="search-res-child search-res syllabus"  placeholder="Mark">
+                            <button class=" search-res-child search-res button-syllabus">Add</button>
+                    </div>
+                    <div id="myview-results" hidden >
+                        <div id="res1" class="view-res"> 
+                            <div class='headers'><p>Term1</p><a class="add add-update"style="margin-left:250px">Add row</a><a class="add-update">Update</a></div>
+                            <div id="res1-marks"></div>
+                        </div>
+                        <div id="res2" class="view-res" >
+                                <div class='headers'><p>Term2</p><a class="add add-update"style="margin-left:250px">Add row</a><a class="add-update">Update</a></div>
+                                <div id="res2-marks"></div>
+                        </div>
+                        <div id="res3" class="view-res">
+                                <div class='headers'><p>Term3</p><a class="add add-update"style="margin-left:250px">Add row</a><a class="add-update">Update</a></div>
+                                <div id="res3-marks"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer"></div>
+        </body>
+</html>

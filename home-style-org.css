@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@keyframes header-anim {
+    0%   {color: orange;}
+    20%   {color: red;}
+    40%  {color: white;}
+    60%  {color: yellow;}
+    80%  {color: skyblue;}
+    100% {color: green;}
+}
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    background-image: url("./images/bg-home3.jpg");
+    background-size: cover;
+    background-color: black;
+    }
+h1{
+    text-align: center;
+    color: orange;
+    font-size: 35px;
+    font-family: Verdana;
+    animation-name: header-anim;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+h1:hover{
+    color: orangered;
+}
+#sidenav{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:#052631;
+    width:250px;
+    height: 160% ;
+    position: absolute;
+    top: 0px;
+}
+.subnav{
+    width:100%;
+    height:50px;
+    border-bottom: 2px solid white;
+    border-radius: 8px;
+    text-align: center;    
+    cursor: pointer;        
+                   
+}
+.subnav:hover{
+    background-color: #06313f;
+    color:orange;
+}
+.subnav-anchor{
+    font-size: 17px;
+    font-family: arial;
+    color:white;
+   
+ }
+.subnav-anchor:hover{
+    font-size: 18px;
+    color:orange
+}
+.nav-select{
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    background-color: #06313f;
+    border: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    font-size: 17px;
+    font-family: arial;
+    color:white;
+    text-align: center;
+    cursor: pointer;   
+}
+.nav-select:hover {
+    font-size: 18px;
+    color:orange
+}
+
+#main-content{
+    width:800px;
+    height: 120px;
+    /*background-color: #052631;*/
+    /*border-right: 1px solid white;*/
+    margin-top: 40px;
+    margin-left: 280px;
+    border-radius: 10px;
+    cursor: pointer
+}
+#main-content-left{
+    width:190px;
+    height: 380px;
+    float:right;
+   /*background-color: red;*/
+    cursor: pointer;
+    border-radius: 10px
+}
+
+#main-content-right{
+    width:190px;
+    height: 380px;
+    float:left;
+   /* background-color: green;*/
+     cursor: pointer;
+     border-radius: 10px
+}
+.submain-content{
+    width:190px;
+    height: 190px;
+    /*border: 2px solid white;*/
+    border-radius: 10px
+}
+
+.account{
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    background-color: #06313f;
+    /*background-color: transparent;*/
+    border: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    font-size: 13px;
+    font-family: arial;
+    color:orange;
+    text-align: center;
+    cursor: pointer;  
+    
+}
+
+#Account{
+    margin: 0;
+    padding: 0;
+    color: orange;
+}
+
+#Account li {
+    background: transparent;
+    border: 1px solid white;
+    list-style: none;
+    width: 120px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+       
+}
+#Account li ul li {
+    display: none;
+}
+
+#Account li:hover ul li{
+    display: block;
+}
+
+#Menu-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.content-class::after{
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 7px;
+}
+.menu-minus::after{
+    content: '\2212';
+    /* position: absolute;
+    right: 15px;
+    font-size: 15px; */
+}
+#Menu li{
+    list-style: none;
+    color: white;
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;  
+    width: 100%;
+    /*background-color: lightblue*/
+    display: none;
+    border-bottom: 1px solid white;
+}
+/*#Menu li:first-child{
+    border-top: 1px solid white;
+}*/
+#Menu li:last-child{
+    border-bottom: none;
+}
+
+/* #Menu-div:hover{
+    height:180px;
+    transition: height 1s;
+} */
+
+/* #Menu-div:hover ul li{
+    display: block;
+} */
+
+.sub-content{
+    width:24.8%;
+    height: 100%;
+    float: left;
+    border: 1px solid orange;
+    border-radius: 10px
+
+}
+
+.charts{
+    width: 48.8%;
+    height: 99%;
+    float: left;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 1
+}
+
+.blur-background{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(10px);
+}
+
+
+    

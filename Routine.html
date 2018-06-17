@@ -1,0 +1,58 @@
+<html>
+    <title>Routine</title>
+    <head>
+     <link rel="stylesheet" href="class-level.css">    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+     <script src="class-level-script.js"></script>
+     </head>
+    <body>
+    <div id="topnav">
+        <img style="width:100px;height:100%" src="./images/small-calendar.png">
+        <span>Daily Time Table</span>
+        <a href="home.html">Home</a>
+    </div>
+    <div style="margin-top: 10px;width:100%; height:100px ; background-color: whitesmoke"id="top-content">
+            <input id="class" list="classes" class="class-list" placeholder="Choose a class">
+            <datalist style="color: white" id="classes">
+              <option value="Class I">
+              <option value="Class II"> 
+              <option value="Class III">
+              <option value="Class IV">
+              <option value="Class V">
+            </datalist>
+            <input id="section" list="sections" class="class-list" placeholder="Choose a section">
+            <datalist id="sections">
+              <option value="Section A">
+              <option value="Section B">
+              <option value="Section C">
+              <option value="Section D">
+            </datalist>
+            <button id="search">Search</button>
+            <table id="timetable" hidden >
+                    <thead>
+                            <tr>
+                                <th >Day</th>
+                                <th > Period 1</th>
+                                <th >Period 2</th>
+                                <th>Period 3</th>
+                                <th >Break</th>
+                                <th >Period 4</th>
+                                <th >Period 5</th>
+                                <th >Period 6</th>
+                            </tr>
+                        </thead>
+            </table>
+            
+        </div>
+        
+    </div>
+    <div id="save"style="background-color: black; width: 100%; height:50px;margin-top: 10px" hidden>
+        <p style="color: greenyellow; position: absolute; margin-left: 450px; font-family: Verdana; font-weight: bold" hidden>Updated Sucessfully! Refresh to view changes.</p>
+        <img id="save-timetable" src="./images/save.png" style="width: 50px; height: 100% ;margin-left: 1200px; cursor:pointer">
+    </div>
+    <div id="update-popup" hidden>
+    
+    </div>
+    
+    </body>
+</html>
